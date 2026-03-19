@@ -25,7 +25,7 @@ setup(
         "Topic :: Office/Business",
         "Topic :: Text Processing"
     ],
-    python_requires=">=3.6",
+    python_requires=">=3.10",
     install_requires=[
         "python-docx>=0.8.10",
     ],
