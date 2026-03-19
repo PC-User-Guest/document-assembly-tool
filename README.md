@@ -49,18 +49,18 @@ graph TB
 
 ## Key Features & Capabilities
 
-- ✅ Multiple data sources: Word tables, CSV, JSON
-- ✅ Customizable placeholder syntax (default: `{{field}}`)
-- ✅ Preserves paragraph styles and inline formatting
-- ✅ Multi-paragraph values support
-- ✅ **Enterprise security**: AES-256 encryption, SHA256 integrity hashing
-- ✅ **Production monitoring**: Health checks, Prometheus metrics, audit trails
-- ✅ **Graceful shutdown**: SIGTERM handling, complete in-flight task processing
-- ✅ **Concurrent processing**: Thread pools (I/O) and process pools (CPU)
-- ✅ **Template caching**: +40% performance improvement
-- ✅ **Error categorization**: Prometheus counters for alerting
-- ✅ **Comprehensive logging**: Configurable levels, debug profiling
-- ✅ Cross-platform (Windows, macOS, Linux)
+-  Multiple data sources: Word tables, CSV, JSON
+-  Customizable placeholder syntax (default: `{{field}}`)
+-  Preserves paragraph styles and inline formatting
+-  Multi-paragraph values support
+-  **Enterprise security**: AES-256 encryption, SHA256 integrity hashing
+-  **Production monitoring**: Health checks, Prometheus metrics, audit trails
+-  **Graceful shutdown**: SIGTERM handling, complete in-flight task processing
+-  **Concurrent processing**: Thread pools (I/O) and process pools (CPU)
+-  **Template caching**: +40% performance improvement
+-  **Error categorization**: Prometheus counters for alerting
+-  **Comprehensive logging**: Configurable levels, debug profiling
+-  Cross-platform (Windows, macOS, Linux)
 
 ## Use Cases
 
@@ -87,7 +87,7 @@ graph TB
    python -m src.document_assembler -d data.docx -t template.docx -o output.docx
    ```
 
-5. **Get your assembled document**  `output.docx` contains the merged content.
+5. **Get your assembled document** `output.docx` contains the merged content.
 
 ## Advanced Usage
 
