@@ -6,8 +6,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="document-assembly-tool",
     version="2.0.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Malwandla Rikhotso",
+    author_email="Malwandla.Rikhotso1@gmail.com",
     description="Enterprise document assembly: merge structured data into Word templates with full formatting preservation",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -20,7 +20,8 @@ setup(
         "Intended Audience :: Legal Industry",
         "Intended Audience :: Education",
         "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",,
+
+        "Operating System :: OS Independent",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
