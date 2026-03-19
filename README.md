@@ -1,7 +1,7 @@
 # Document Assembly Tool
 
 [![CI](https://github.com/PC-User-Guest/document-assembly-tool/actions/workflows/ci.yml/badge.svg)](https://github.com/PC-User-Guest/document-assembly-tool/actions/workflows/ci.yml)
-[![Python Versions](https://img.shields.io/badge/python-3.6%20%7C%203.7%20%7C%203.8%20%7C%203.9%20%7C%203.10-blue)](https://www.python.org/)
+[![Python Versions](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Enterprise-grade document assembly tool: merge structured data into Word templates with production-ready security, observability, and concurrent processing. Preserve all formatting – bold, italic, bullet lists, and more.
