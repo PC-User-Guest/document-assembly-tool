@@ -1,0 +1,7 @@
+python-docx>=0.8.10
+pytest>=6.0
+pytest-cov>=2.0
+flake8>=3.8
+cryptography>=3.4
+prometheus-client>=0.11
+psutil>=5.8
