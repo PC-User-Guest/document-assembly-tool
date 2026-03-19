@@ -20,6 +20,7 @@ setup(
         "Intended Audience :: Legal Industry",
         "Intended Audience :: Education",
         "License :: OSI Approved :: MIT License",
+
         "Operating System :: OS Independent",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
