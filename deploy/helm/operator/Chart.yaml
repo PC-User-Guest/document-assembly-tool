@@ -1,0 +1,5 @@
+apiVersion: v2
+name: operator
+description: Document Assembly Operator
+version: 0.1.0
+appVersion: 1.0.0

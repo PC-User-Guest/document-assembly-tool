@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package assembler;
+
+service DocumentAssembler {
+  rpc AssembleDocument (AssembleRequest) returns (AssembleResponse);
+  rpc BatchAssemble (BatchRequest) returns (BatchResponse);
+  rpc HealthCheck (HealthRequest) returns (HealthResponse);
+  rpc GetMetrics (MetricsRequest) returns (MetricsResponse);
+}
+
+message AssembleRequest {
+  string data_source = 1;
+  string template_path = 2;
+  string output_path = 3;
+  string data_type = 4;
+}
+
+message AssembleResponse {
+  bool success = 1;
+  string message = 2;
+  string output_path = 3;
+}
+
+message BatchRequest {
+  repeated AssembleRequest requests = 1;
+  bool use_processes = 2;
+}
+
+message BatchResponse {
+  repeated AssembleResponse responses = 1;
+}
+
+message HealthRequest {}
+
+message HealthResponse {
+  string status = 1;
+}
+
+message MetricsRequest {}
+
+message MetricsResponse {
+  map<string, double> metrics = 1;
+}

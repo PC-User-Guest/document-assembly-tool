@@ -84,7 +84,7 @@ graph TB
 
 4. **Run**
    ```bash
-   python -m src.document_assembler -d data.docx -t template.docx -o output.docx
+   python -m src.cli -d data.docx -t template.docx -o output.docx
    ```
 
 5. **Get your assembled document** `output.docx` contains the merged content.
@@ -105,14 +105,14 @@ curl http://localhost:8000/health | jq .
 
 ```bash
 # Process 4 documents in parallel (thread pool)
-python -m src.document_assembler -d data.docx -t template.docx -o output.docx --concurrency 4
+python -m src.cli -d data.docx -t template.docx -o output.docx --concurrency 4
 ```
 
 ### Encryption & Security
 
 ```bash
 # Encrypt output (AES-256 with SHA256 integrity check)
-python -m src.document_assembler -d data.docx -t template.docx -o output.docx --encrypt-output
+python -m src.cli -d data.docx -t template.docx -o output.docx --encrypt-output
 
 # Key auto-generated at ~/.docassembler/encryption.key (permissions: 0600)
 ```
@@ -121,7 +121,7 @@ python -m src.document_assembler -d data.docx -t template.docx -o output.docx --
 
 ```bash
 # Debug logging with full execution trace
-python -m src.document_assembler -d data.docx -t template.docx -o output.docx --log-level DEBUG
+python -m src.cli -d data.docx -t template.docx -o output.docx --log-level DEBUG
 ```
 
 ## Documentation

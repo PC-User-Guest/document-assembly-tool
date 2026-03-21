@@ -1,0 +1,33 @@
+2026-03-21 01:26:43,843 - src.advanced_features - INFO - Security manager initialized with key_id: key_2026_03_21_dc98d378
+2026-03-21 01:26:43,850 - src.grpc_server - INFO - gRPC server started on port 50051
+2026-03-21 01:26:49,111 - src.document_assembler - INFO - Loading data from Word: tests/fixtures/sample_data.docx
+2026-03-21 01:26:49,222 - src.document_assembler - INFO - Loaded 4 fields from Word.
+2026-03-21 01:26:49,321 - src.document_assembler - INFO - Found 3 placeholder(s).
+2026-03-21 01:26:49,322 - src.document_assembler - INFO - Found 0 full-paragraph placeholder(s).
+2026-03-21 01:26:49,359 - src.document_assembler - INFO - Assembled document saved to: tests/fixtures/grpc_output.docx
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1774056409.366022   17823 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+I0000 00:00:1774056409.376680   17823 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+I0000 00:00:1774056409.542477   17823 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+I0000 00:00:1774056409.548302   17823 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+2026-03-21 01:26:49,567 - src.document_assembler - INFO - Loading data from CSV: tests/fixtures/sample_data.csv
+2026-03-21 01:26:49,566 - src.document_assembler - INFO - Loading data from Word: tests/fixtures/sample_data.docx
+2026-03-21 01:26:49,593 - src.document_assembler - INFO - Found 3 placeholder(s).
+2026-03-21 01:26:49,594 - src.document_assembler - INFO - Found 0 full-paragraph placeholder(s).
+2026-03-21 01:26:49,626 - src.document_assembler - INFO - Assembled document saved to: tests/fixtures/grpc_batch_2.docx
+2026-03-21 01:26:49,641 - src.document_assembler - INFO - Loaded 4 fields from Word.
+2026-03-21 01:26:49,685 - src.document_assembler - INFO - Found 3 placeholder(s).
+2026-03-21 01:26:49,686 - src.document_assembler - INFO - Found 0 full-paragraph placeholder(s).
+2026-03-21 01:26:49,730 - src.document_assembler - INFO - Assembled document saved to: tests/fixtures/grpc_batch_1.docx
+2026-03-21 01:26:49,832 - src.advanced_features - INFO - Received signal 15. Initiating graceful shutdown...
+2026-03-21 01:26:49,832 - src.advanced_features - INFO - Received signal 15. Initiating graceful shutdown...
+2026-03-21 01:26:49,832 - src.advanced_features - INFO - Waiting for in-flight tasks to complete...
+2026-03-21 01:26:49,832 - src.advanced_features - INFO - All tasks completed. Exiting.
+2026-03-21 01:26:49,832 - src.advanced_features - INFO - Received signal 15. Initiating graceful shutdown...
+2026-03-21 01:26:49,832 - src.advanced_features - INFO - Waiting for in-flight tasks to complete...
+2026-03-21 01:26:49,833 - src.advanced_features - INFO - Waiting for in-flight tasks to complete...
+2026-03-21 01:26:49,833 - src.advanced_features - INFO - All tasks completed. Exiting.
+2026-03-21 01:26:49,833 - src.advanced_features - INFO - Received signal 15. Initiating graceful shutdown...
+2026-03-21 01:26:49,833 - src.advanced_features - INFO - All tasks completed. Exiting.
+2026-03-21 01:26:49,833 - src.advanced_features - INFO - Waiting for in-flight tasks to complete...
+2026-03-21 01:26:49,834 - src.advanced_features - INFO - All tasks completed. Exiting.
