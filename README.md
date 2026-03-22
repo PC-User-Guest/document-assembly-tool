@@ -49,8 +49,8 @@ graph TB
 
 ## Key Features & Capabilities
 
--  Multiple data sources: Word tables, CSV, JSON
--  Customizable placeholder syntax (default: `{{field}}`)
+-  **Multiple data sources**: Word tables, CSV, JSON
+-  **Customizable placeholder syntax (default: `{{field}}`)
 -  Preserves paragraph styles and inline formatting
 -  Multi-paragraph values support
 -  **Enterprise security**: AES-256 encryption, SHA256 integrity hashing
