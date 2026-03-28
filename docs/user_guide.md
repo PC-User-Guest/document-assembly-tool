@@ -1,4 +1,4 @@
-# Document Assembly Tool
+# Document Assembly Tool - User Guide
 
 ## Overview
 
@@ -6,10 +6,10 @@ The Document Assembly Tool automates the merging of structured data into a Word 
 
 ### Typical Use Cases
 
-* **Contract Generation** — Populate contract templates with client data
-* **Personalized Marketing Materials** — Create proposals, letters, and brochures
-* **Report Automation** — Generate recurring reports from structured data
-* **Document Personalization** — Insert dynamic values into standard documents
+* **Contract Generation** - Populate contract templates with client data.
+* **Personalized Marketing Materials** - Create proposals, letters, and brochures.
+* **Report Automation** - Generate recurring reports by merging data from databases or spreadsheets.
+* **Document Personalization** - Insert names, dates, and other variable content into standard documents.
 
 ---
 
@@ -22,9 +22,16 @@ The Document Assembly Tool automates the merging of structured data into a Word 
 
 ## Installation
 
+1. Clone or download the project repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/PC-User-Guest/document-assembly-tool.git
+```
+2. Open a terminal in the project root directory:
+```bash
 cd <repository-directory>
+```
+3. Install dependencies:
+```bash
 pip install -r requirements.txt
 ```
 
@@ -34,31 +41,30 @@ pip install -r requirements.txt
 
 ### Word Table (`--data-type word`)
 
-* Uses the first table in the document
-* First row is treated as a header and skipped
-* Each subsequent row must contain:
+- The first table in the document is used.
+- First row is treated as header and skipped.
+- Each subsequent row must contain:
 
   * Column 1: Field Name
   * Column 2: Value
-* Supports rich formatting (bold, italic, lists, etc.)
+- The Value column can contain formatted text (bold, italic, lists).
 
 ### CSV (`--data-type csv`)
 
-* First row must be headers
-* Only the first data row is used
-* Values are treated as plain text
-
+- First row must be header (field names).
+- Only the first data row is used (multiple rows are ignored with a warning).
+- Values are plain text; formatting is not preserved.
+  
 ### JSON (`--data-type json`)
 
-* Accepts:
-
-  * A JSON object (`{}`), or
-  * An array of objects (`[]`, first object used)
-* Values are converted to plain text
+- File must contain a JSON object (key-value pairs) or an array of objects (first object used).
+- Values can be strings, numbers, or booleans; they are converted to plain text.
 
 ---
 
 ## Template Placeholders
+
+Placeholders in the template document follow a configurable pattern. The default pattern is `{{ field_name }}` (curly braces with optional spaces). You can change the pattern using the `--placeholder-pattern` option (must include a named group `field_name`).
 
 Default placeholder format:
 
@@ -240,11 +246,11 @@ Requires modifying the `insert_data` method to:
 
 ## Enterprise Use Cases
 
-* **Legal and Compliance** — Contracts, NDAs, policies
-* **Sales and Marketing** — Proposals, quotes, brochures
-* **Human Resources** — Offer letters, reviews
-* **Finance** — Reports and summaries
-* **Education** — Certificates, transcripts
+* **Legal and Compliance** - Contracts, NDAs, policies
+* **Sales and Marketing** - Proposals, quotes, brochures
+* **Human Resources** - Offer letters, reviews
+* **Finance** - Reports and summaries
+* **Education** - Certificates, transcripts
 
 ---
 
